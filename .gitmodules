@@ -1,0 +1,6 @@
+[submodule "bugrack"]
+	path = bugrack
+	url = https://github.com/EvanNikaloasTheFirst/bugrack.git
+[submodule "BugTracker"]
+	path = BugTracker
+	url = https://github.com/EvanNikaloasTheFirst/BugTracker.git

@@ -1,0 +1,20 @@
+services:
+  frontend:
+    build: "./frontend.Dockerfile"
+    ports:
+    - 3000:3000
+  backend:
+    build: "./backend.Dockerfile"
+    ports:
+    - 4000:4000
+  database:
+    image: "mongo:latest"
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "root"
+      MONGO_INITDB_ROOT_PASSWORD: "password"
+    volumes: database:/data/db
+
+volumes:
+  database:
