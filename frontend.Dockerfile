@@ -1,5 +1,7 @@
 FROM node:latest
 #TODO: change latest to application version
-COPY backend/ /backend/
+COPY bugrack/ /frontend/
+WORKDIR /frontend/
+
 RUN npm install
 CMD ["npm", "run", "dev"]
